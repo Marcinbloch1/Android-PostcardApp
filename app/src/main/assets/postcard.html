@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script type="text/javascript">
+        function init()
+        {
+            document.getElementById("presents").innerHTML = activity.getPresentsList();
+            document.getElementById("receiverImg").src=activity.getPhotoPath();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="postcard.css">
+</head>
+<body onload="init()">
+    <div class="letter">
+        <div class="left">
+            <div id="sender">
+                <h2>Nadawca:</h2>
+            </div>
+            <div>
+                <h1>Lista prezentów:</h1>
+            </div>
+            <div id="presents">
+            </div>
+        </div>
+        <div class="right">
+            <div id="receiver2">
+                <img id="receiverImg" src = "" />
+            </div>
+            <div id="receiver3">
+                <h1>Św. Mikołaj</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

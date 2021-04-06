@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" type="text/css" href="postcard.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Dodaj prezent lub wygeneruj kartke</h2>
+        <button class="myButton" onclick="addPresent()">Dodaj prezent</button>
+        <button class="myButton" onclick="generate()">Generuj kartke</button>
+    </div>
+<script type="text/javascript">
+        function addPresent()
+        {
+            activity.addPresent();
+        }
+        function generate()
+        {
+            activity.dispatchTakePictureIntent();
+        }
+    </script>
+</body>
+</html>
